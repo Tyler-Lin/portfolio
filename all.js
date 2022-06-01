@@ -1,5 +1,3 @@
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-
 class Textify {
     constructor(ele, delayTime, speed) {
         this.delayTime = delayTime
