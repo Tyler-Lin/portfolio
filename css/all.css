@@ -12201,10 +12201,11 @@ input[type='checkbox'], input[type='radio'] {
 
 :root {
   font-size: 16px;
+  --backgorund-color: #292929;
   --link-color: #4ca4be;
   --neon-text-color: #4ca4be;
   --neon-border-color: #4ca4be;
-  --base-color: #f8f8f8;
+  --base-color: #96c7c7;
 }
 
 html {
@@ -12214,8 +12215,8 @@ html {
 body {
   font-family: "Exo 2", sans-serif;
   letter-spacing: 1px;
-  color: #96c7c7;
-  background-color: #292929;
+  color: var(--base-color);
+  background-color: var(--backgorund-color);
 }
 
 body.hide {
@@ -12225,12 +12226,6 @@ body.hide {
 
 a {
   text-decoration: none;
-}
-
-@media (hover: hover) {
-  a.link_hover:hover:after {
-    width: 100%;
-  }
 }
 
 a.link_hover {
@@ -12252,6 +12247,12 @@ a.link_hover:after {
   background: linear-gradient(90deg, #6dade9 0%, #8793e8 100%);
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+}
+
+@media (hover: hover) {
+  a.link_hover:hover:after {
+    width: 100%;
+  }
 }
 
 .header {
@@ -12572,7 +12573,7 @@ a.link_hover:after {
 }
 
 .others_item span {
-  color: var(--base-color);
+  color: #f8f8f8;
 }
 
 .others_item img {

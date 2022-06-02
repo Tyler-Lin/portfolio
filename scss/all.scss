@@ -8,8 +8,8 @@ html {
 body {
     font-family: "Exo 2", sans-serif;
     letter-spacing: 1px;
-    color: #96c7c7;
-    background-color: #292929;
+    color: var(--base-color);
+    background-color: var(--backgorund-color);
     &.hide {
         overflow: hidden;
         height: 100%;
@@ -17,13 +17,6 @@ body {
 }
 a {
     text-decoration: none;
-}
-@media (hover: hover) {
-    a.link_hover:hover {
-        &:after {
-            width: 100%;
-        }
-    }
 }
 a.link_hover {
     color: var(--link-color);
@@ -39,6 +32,13 @@ a.link_hover {
         width: 0%;
         background: linear-gradient(90deg, #6dade9 0%, #8793e8 100%);
         transition-duration: 0.2s;
+    }
+}
+@media (hover: hover) {
+    a.link_hover:hover {
+        &:after {
+            width: 100%;
+        }
     }
 }
 .header {
@@ -264,7 +264,7 @@ a.link_hover {
     display: block;
     overflow: hidden;
     span {
-        color: var(--base-color);
+        color: #f8f8f8;
     }
     img {
         transition-duration: 0.2s;
