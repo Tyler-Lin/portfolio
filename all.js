@@ -71,3 +71,16 @@ window.addEventListener(
     },
     false
 )
+
+$(".header__btn").click(function (e) {
+    e.preventDefault()
+    $(".header__menu").slideToggle("fast")
+})
+
+$(".header__menu a").click(function () {
+    if (window.innerWidth > 768) {
+        return
+    } else {
+        $(".header__menu").slideUp("fast")
+    }
+})
